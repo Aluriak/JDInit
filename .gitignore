@@ -1,0 +1,9 @@
+*.o
+*~
+.*.swp
+*.pro
+moc_*
+Makefile
+Img/
+JDInit
+File/Erreur

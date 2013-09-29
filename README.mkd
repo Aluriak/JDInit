@@ -1,0 +1,56 @@
+# JDInit
+
+
+
+## Introduction
+
+JDInit est implémenté en C++, avec la bibliothèque Qt. Ce logiciel destiné aux joueurs de jeu de rôle sur table est sous licence copyleft.
+
+
+
+## Fonctionnalités
+
+
+JDInit voit sa fonctionnalité première dans l'ajout simple de descriptifs de protagonistes, descriptifs contenant le nom, la figurine représentant le protagoniste sur le plateau de jeu, une priorité, les statuts et un camp. A partir de ces informations, la table affiche automatiquement l'ensemble des protagonistes selon l'ordre de priorité décroissant.   
+Il est également possible de modifier une bonne partie du vocabulaire employé par JDInit, afin d'entretenir une cohérence avec n'importe quel jeu de rôle.  
+
+
+
+
+
+## Modifications
+
+Il est possible, en tant qu'utilisateur, de modifier intelligemment les fichiers Groupe et Vocabulaire. Il est en revanche déconseillé de toucher au fichier Config, dont la modification n'a d'une part, que peu d'intérêt (vous pouvez le faire sans risque depuis les options de JDInit), et qui d'autre part pourrais générer quelques problèmes d'affichage.
+
+
+
+## Vocabulaire
+
+JDInit est capable d'utiliser le vocabulaire que vous lui donnez en modifiant le fichier ad hoc. En utilisant un logiciel de traitement de texte tel que le bloc-note, notepad++, kate,... il est possible de fournir au logiciel le vocabulaire de votre choix. laisser un blanc après les deux-points demande à JDInit d'utiliser les valeurs par défaut.
+
+
+
+## Groupe de joueur
+
+Afin d'éviter certaines tâches ennuyeuses, notamment l'ajout répétitif des PJ au lancement du logiciel, vous pouvez utiliser le fichier Groupe.  
+Modifiez-le avec la même méthode que le fichier de vocabulaire, selon le formatage suivant :  
+JDInit lira le fichier ligne par ligne, et à chaque ligne crééra une entité dont le camp est celui des PJ.  
+Le nom de cette entité est l'ensemble des caractères de la ligne situé avant le premier ':'.  
+La figurine utilisée est l'ensemble des caractère de la ligne situés entre le premier et le second ':'.  
+Le comportement de JDInit en cas d'abscence de ':' ne mène pas au résultat escompté.  
+Exemple de formatage :  
+Oscar:Nain en armure:  
+Fred:Humain avec un cochon:  
+Douglaë:Elfe à l'arc:  
+
+
+
+
+
+## Problèmes
+
+En cas de problème dans le logiciel, consultez le fichier Erreur. Dans certains cas, il contiendra des lignes explicitant les erreurs rencontrées lors du dernier démarrage de JDInit. Certaines erreurs vous sembleront peut-être obscure.
+  
+L'auteur se décharge de toute responsabilité concernant l'utilisation de ce logiciel.
+
+
